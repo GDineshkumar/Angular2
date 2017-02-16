@@ -9,4 +9,4 @@ import { RouterModule } from '@angular/router';
   exports :[PersonalInfoComponent],
 })
 
-export class personalInfoModule{}
+export class PersonalInfoModule{}

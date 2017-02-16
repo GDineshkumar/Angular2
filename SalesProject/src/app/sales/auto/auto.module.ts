@@ -1,13 +1,20 @@
-import { AutoComponent } from './auto.component';
-import { PersonalInfoComponent } from './personalInfo/personalInfo.component'
-import { personalInfoModule } from './personalInfo/personalinfo.module';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {AutoComponent} from './auto.component';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {SelectPremiumComponent} from './select-premium/select-premium.component';
+import {PersonalDetailsComponent} from './personal-details/personal-details.component';
+import {routes} from './auto.routes';
 
 @NgModule({
-  imports: [RouterModule, personalInfoModule],
-  declarations: [AutoComponent],
+  imports: [
+    AutoComponent,
+    SelectPremiumComponent,
+    PersonalDetailsComponent,
+    RouterModule.forChild(routes)
+  ],
+  declarations: [AutoComponent, SelectPremiumComponent, PersonalDetailsComponent],
   exports: [AutoComponent]
 })
 
-export class AutoModule { }
+export class AutoModule {
+}
