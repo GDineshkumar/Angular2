@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-personal-details',
   templateUrl: './personal-details.component.html',
-  styleUrls: ['./personal-details.component.css']
+  styleUrls: ['./personal-details.component.css'],
 })
 export class PersonalDetailsComponent implements OnInit {
 
@@ -12,4 +11,18 @@ export class PersonalDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
+}
+
+@Component({
+  template: '<p>NameComponent</p>',
+  styles: ['']
+})
+export class NameComponent {
+}
+
+@Component({
+  template: '<p>AddressComponent</p>',
+  styles: ['']
+})
+export class AddressComponent {
 }

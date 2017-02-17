@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-select-premium',
-  templateUrl: './select-premium.component.html',
-  styleUrls: ['./select-premium.component.css'],
+  selector: 'app-vehicle',
+  templateUrl: './vehicle.component.html',
+  styleUrls: ['./vehicle.component.css'],
   encapsulation: ViewEncapsulation.null,
   changeDetection: ChangeDetectionStrategy.null
 })
-export class SelectPremiumComponent implements OnInit {
+export class VehicleComponent implements OnInit {
 
   constructor() { }
 
