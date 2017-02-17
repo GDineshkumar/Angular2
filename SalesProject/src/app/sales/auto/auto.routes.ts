@@ -11,5 +11,4 @@ export const SALES_AUTO_ROUTES: Routes = [
     {path: 'personal-details', component: PersonalDetailsComponent, children: PERSONAL_DETAILS_ROUTES},
     {path: 'vehicle', component: VehicleComponent}
 
-  ]
-  ;
+  ];

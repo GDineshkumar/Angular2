@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 
 @Component({
   templateUrl: './personal-details.component.html',
@@ -14,15 +14,15 @@ export class PersonalDetailsComponent implements OnInit {
 }
 
 @Component({
-  template: '<p>NameComponent</p>',
-  styles: ['']
+  selector: 'details-name',
+  template: '<p>NameComponent</p>'
 })
 export class NameComponent {
 }
 
 @Component({
-  template: '<p>AddressComponent</p>',
-  styles: ['']
+  selector: 'address-name',
+  template: '<p>AddressComponent</p>'
 })
 export class AddressComponent {
 }

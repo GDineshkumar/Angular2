@@ -13,25 +13,28 @@ import {
 } from "./sales/auto/personal-details/personal-details.component";
 import {SelectPremiumComponent} from "./sales/auto/select-premium/select-premium.component";
 import {VehicleComponent} from "./sales/auto/vehicle/vehicle.component";
+import { LandingComponent } from './landing/landing.component';
 
 // Make sure all Components used are imported into this Module
 
 @NgModule({
   declarations: [
+    AppComponent,
     AutoComponent,
+    HomeComponent,
     SelectPremiumComponent,
     PersonalDetailsComponent,
     VehicleComponent,
     NameComponent,
     AddressComponent,
     SalesComponent,
-    HomeComponent
+    LandingComponent
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
