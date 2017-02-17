@@ -1,3 +1,99 @@
-<p>Personal Details</p>
-<router-outlet name="personal-detail-outlet"></router-outlet>
+<div class="container ">
+  <div class="row text-center">
+    <div class="col">
+      <h3>Select Your Target Premium</h3>
+    </div>
+  </div>
+  <form class="form-horizontal">
+    <fieldset>
 
+      <!-- Form Name -->
+      <legend>Lets Talk About you!</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="firstName">First Name</label>
+        <div class="col-md-4">
+          <input id="firstName" name="firstName" type="text" placeholder="First Name" class="form-control input-md"
+                 required="">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="lastName">Last Name</label>
+        <div class="col-md-4">
+          <input id="lastName" name="lastName" type="text" placeholder="Last Name" class="form-control input-md"
+                 required="">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="dateOfBirth">Date of Birth</label>
+        <div class="col-md-3">
+          <div class='input-group date' id='datetimepicker1'>
+            <input id="dateOfBirth" name="dateOfBirth" type="text" class="form-control input-md" required="">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-th"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="street">Street</label>
+        <div class="col-md-4">
+          <input id="street" name="street" type="text" placeholder="Street" class="form-control input-md" required="">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="aptOrSuite">Apt/Suite</label>
+        <div class="col-md-4">
+          <input id="aptOrSuite" name="aptOrSuite" type="text" placeholder="Apt/Suite" class="form-control input-md"
+                 required="">
+
+        </div>
+      </div>
+
+      <!-- Search input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="state">State</label>
+        <div class="col-md-4">
+          <input id="state" name="state" type="search" placeholder="State" class="form-control input-md" required="">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="city">City</label>
+        <div class="col-md-4">
+          <input id="city" name="city" type="text" placeholder="City" class="form-control input-md" required="">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="zipCode">Zip Code</label>
+        <div class="col-md-4">
+          <input id="zipCode" name="zipCode" type="text" placeholder="Zip Code" class="form-control input-md"
+                 required="">
+
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+  <a class="btn btn-primary" [routerLink]="['/sales/auto/vehicle']" role="button">Next</a>
+</div>
